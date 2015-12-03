@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@color/blanco">
+
+
+
+    <LinearLayout
+
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar3"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <LinearLayout
+
+            android:id="@+id/container_elemnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="@color/black"
+        android:id="@+id/textView11"
+        android:textSize="25dp"
+        android:layout_gravity="center_horizontal" />
+
+    <FrameLayout
+        android:layout_width="89dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/Imagen1"
+        android:background="@drawable/infracontrolblinkbg"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.15"></FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conecte el Blasbot a la corriente"
+        android:id="@+id/textView10"
+        android:paddingTop="10dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textColor="@color/black"
+        android:id="@+id/textView12"
+        android:textSize="25dp"
+        android:layout_gravity="center_horizontal" />
+
+    <FrameLayout
+        android:layout_width="138dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/Imagen2"
+        android:background="@drawable/infracontrolpush"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.10" />
+
+    <TextView
+        android:layout_width="284dp"
+        android:layout_height="wrap_content"
+        android:text="Presione el botón de configuración por al menos 5 segundos hasta que el LED verde quede encendido"
+        android:id="@+id/textView17"
+        android:paddingTop="10dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textColor="@color/black"
+        android:id="@+id/textView13"
+        android:textSize="25dp"
+        android:layout_gravity="center_horizontal" />
+
+    <FrameLayout
+        android:layout_width="89dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/frameLayout"
+        android:background="@drawable/infracontrolledonalone"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.19" />
+
+    <TextView
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:text="Cuando el LED verde quede fijo, presione &quot;siguiente&quot;"
+        android:id="@+id/textView18"
+        android:paddingTop="10dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        android:id="@+id/btsiguiente"
+        android:background="@color/blue"
+        android:textColor="@color/blanco"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saltar este paso"
+        android:textSize="15sp"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:textColor="@color/purple"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

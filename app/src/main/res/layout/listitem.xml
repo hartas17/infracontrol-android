@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:id="@+id/Iniciales"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_alignBottom="@+id/imageView1"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CodeLearn Chapter 1"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/Iniciales"
+        android:layout_toEndOf="@+id/imageView1"
+        android:paddingTop="15dp"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:layout_below="@+id/textView1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:layout_toEndOf="@+id/imageView1"
+        android:textColor="@color/feedback"
+
+        />
+
+</RelativeLayout>

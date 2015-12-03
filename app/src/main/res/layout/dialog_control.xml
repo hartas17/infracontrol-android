@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/nuevosss"
+    android:weightSum="1"
+    xmlns:shadow="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blanco">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/blanco"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:id="@+id/textView12" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Nombre_Control"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blastbot"
+            android:id="@+id/textView11" />
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/dialog_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ms_arrowColor="#000001"
+            app:ms_arrowSize="16dp"
+            app:ms_floatingLabelColor="#258eff"
+            app:ms_multiline="true"
+
+
+
+            />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <app.mosn.zdepthshadowlayout.ZDepthShadowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                shadow:z_depth="z_depth2"
+                shadow:z_depth_shape="rect"
+                shadow:z_depth_padding="z_depth5"
+                android:layout_gravity="top|right"
+                >
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cancelar"
+                    android:id="@+id/dialogNo"
+                    android:background="@drawable/color_selector_butons"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/ligthBlue"
+                    />
+
+            </app.mosn.zdepthshadowlayout.ZDepthShadowLayout>
+
+            <app.mosn.zdepthshadowlayout.ZDepthShadowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                shadow:z_depth="z_depth2"
+                shadow:z_depth_shape="rect"
+                shadow:z_depth_padding="z_depth5"
+                android:layout_gravity="top|right"
+                >
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Aplicar"
+                android:id="@+id/dialogOk"
+                android:background="@drawable/color_selector_butons"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/ligthBlue"
+                android:gravity="right"
+
+                />
+</app.mosn.zdepthshadowlayout.ZDepthShadowLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

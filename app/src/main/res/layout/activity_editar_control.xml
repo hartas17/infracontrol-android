@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    xmlns:shadow="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar7"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        card_view:cardCornerRadius="4dp"
+
+        >
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ScrollView01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:id="@+id/textView16"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/new_name_control"
+                android:hint="Nombre"
+                app:met_baseColor="#000206"
+                app:met_primaryColor="#47a2ff"
+                app:met_errorColor="#ddaa00"/>
+
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/New_color_control"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:ms_arrowColor="#d0e4ec"
+                app:ms_arrowSize="16dp"
+                app:ms_floatingLabelColor="#258eff"
+                app:ms_floatingLabelText="Color"
+                app:ms_multiline="true" />
+
+
+            <app.mosn.zdepthshadowlayout.ZDepthShadowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                shadow:z_depth="z_depth2"
+                shadow:z_depth_shape="rect"
+                shadow:z_depth_padding="z_depth5"
+                android:layout_gravity="top|right">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        android:id="@+id/aceptar_control"
+        android:layout_gravity="center"
+        android:background="@color/ligthBlue"
+        android:textColor="@color/blanco"/>
+            </app.mosn.zdepthshadowlayout.ZDepthShadowLayout>
+
+        </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

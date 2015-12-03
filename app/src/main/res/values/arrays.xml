@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string-array name="Colores">
+        <item android:icon="@drawable/circle_red">Rojo</item>
+        <item android:icon="@drawable/circle">Azul</item>
+        <item android:icon="@drawable/circle_yellow">Azul bajo</item>
+        <item android:icon="@drawable/circle_orange">Naranja</item>
+        <item android:icon="@drawable/circle_green">Purpura</item>
+    </string-array>
+</resources>

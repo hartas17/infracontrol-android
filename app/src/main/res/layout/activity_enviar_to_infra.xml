@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    >
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar4"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregue configuracion de acuerdo a la red a la que se conectará el Infracontrol"
+            android:id="@+id/textView"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SSID:"
+            android:id="@+id/textView3"
+            android:layout_gravity="left|center_horizontal"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="30dp" />
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/SSid_infra"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:ms_arrowColor="#d0e4ec"
+            app:ms_arrowSize="16dp"
+            app:ms_floatingLabelColor="#258eff"
+            app:ms_floatingLabelText="Dispositivo"
+            app:ms_hint="Seleccione la red"
+            app:ms_multiline="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="PASSWORD:"
+            android:id="@+id/textView4"
+            android:layout_gravity="left|center_horizontal"
+            android:layout_marginLeft="0dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pass"
+            android:layout_gravity="center_horizontal"
+            android:editable="true"
+            android:enabled="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DHCP"
+            android:id="@+id/btDhcp"
+            android:checked="true"
+            android:layout_gravity="right" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/DHCP_contenedor">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="IP:"
+                android:id="@+id/textView5"
+                android:layout_gravity="left|center_horizontal"
+                android:layout_marginLeft="20dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_weight="0.08">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ip0"
+                    android:layout_gravity="bottom"
+                    android:layout_weight=".25"
+                    android:editable="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ip1"
+                    android:layout_gravity="bottom"
+                    android:layout_weight=".25"
+                    android:editable="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ip2"
+                    android:layout_weight=".25"
+                    android:layout_gravity="bottom"
+                    android:editable="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ip3"
+                    android:layout_weight=".25"
+                    android:layout_gravity="bottom"
+                    android:editable="true" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mascara de subred"
+                android:id="@+id/textView6"
+                android:layout_gravity="left|center_horizontal"
+                android:layout_marginLeft="20dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_weight="0.08"
+                android:layout_gravity="center_horizontal">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/s0"
+                    android:layout_gravity="bottom"
+                    android:layout_weight=".25"
+                    android:editable="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/s1"
+                    android:layout_gravity="bottom"
+                    android:layout_weight=".25"
+                    android:editable="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/s2"
+                    android:layout_weight=".25"
+                    android:layout_gravity="bottom"
+                    android:editable="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/s3"
+                    android:layout_weight=".25"
+                    android:layout_gravity="bottom"
+                    android:editable="true" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Puerta de enlace"
+                android:id="@+id/textView7"
+                android:layout_gravity="left|center_horizontal"
+                android:layout_marginLeft="20dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_weight="0.08"
+                android:layout_gravity="center_horizontal">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/g0"
+                    android:layout_gravity="bottom"
+                    android:layout_weight=".25"
+                    android:editable="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/g1"
+                    android:layout_gravity="bottom"
+                    android:layout_weight=".25"
+                    android:editable="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/g2"
+                    android:layout_weight=".25"
+                    android:layout_gravity="bottom"
+                    android:editable="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/g3"
+                    android:layout_weight=".25"
+                    android:layout_gravity="bottom"
+                    android:editable="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:id="@+id/btEnviar"
+            android:layout_gravity="center_horizontal|right"
+            android:onClick="Enviar"
+            android:textColor="@color/blanco"
+            android:background="@color/blue"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
